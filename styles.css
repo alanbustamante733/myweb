@@ -1004,7 +1004,9 @@ footer {
     }
     
     .hero {
-        padding-top: 4cm;
+        align-items: center;
+        padding-top: 120px;
+        height: calc(100vh + 120px);
     }
     
     .hero-content h1 {
