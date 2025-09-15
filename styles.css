@@ -1004,8 +1004,7 @@ footer {
     }
     
     .hero {
-        align-items: flex-start;
-        padding-top: 6cm;
+        padding-top: 4cm;
     }
     
     .hero-content h1 {
