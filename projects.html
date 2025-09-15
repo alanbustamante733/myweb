@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineer - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix background -->
+    <div class="matrix-bg" id="matrix-bg"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">{'< AI_Engineer />'}</div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="talk.html">Talks</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="fun.html">Fun</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Projects Content -->
+    <div class="page-content">
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">{'< Projects />'}</h2>
+                
+                <!-- Remerge GmbH Projects -->
+                <div class="project-section">
+                    <h3 class="project-section-title">Remerge GmbH</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Internal Reporting Automation with AI</h3>
+                            <p><strong>Context:</strong> Within the team, we identified that generating campaign performance reports was highly manual and time-consuming.</p>
+                            <p><strong>Challenge:</strong> The goal was to reduce operational workload while delivering actionable insights faster to business stakeholders.</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Designed and implemented a Slack bot capable of understanding natural language queries.</li>
+                                <li>The bot uses the OpenAI API to transform user questions into structured SQL queries.</li>
+                                <li>These queries are then executed against a Druid database, retrieving live analytical data.</li>
+                                <li>Results are automatically formatted and returned directly in Slack, making insights accessible in real time.</li>
+                            </ul>
+                            <p><strong>Key Learnings:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                                <li>Gained hands-on experience integrating AI APIs into real-world enterprise workflows.</li>
+                                <li>Strengthened skills in Python development, prompt engineering, and data handling.</li>
+                                <li>Learned how to effectively connect business needs with technical solutions, improving both efficiency and accessibility of reporting.</li>
+                                <li>This was my first end-to-end project, where I practiced the principles of CI/CD (with Nomad) and worked extensively on the testing phase, experiencing the full lifecycle of a project.</li>
+                                <li>Additionally, I gained exposure to Infrastructure as a Service (IaaS) with Terraform, which helped me understand how to manage and provision infrastructure in a scalable way.</li>
+                            </ul>
+                            <div class="project-github">
+                                <a href="https://github.com/alanbustamante733/Slack-SQL-Assistant-Bot" target="_blank" class="github-link">
+                                    <svg class="github-icon" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    View Repository
+                                </a>
+                                <a href="javascript:void(0)" onclick="openImageGallery(['img/nexus.png', 'img/nexus2.png'], 'Internal Reporting Automation with AI')" class="image-link">
+                                    <svg class="image-icon" viewBox="0 0 24 24">
+                                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                    </svg>
+                                    View Screenshots (2)
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Slack API</span>
+                                <span class="tech-tag">Druid</span>
+                                <span class="tech-tag">Nomad</span>
+                                <span class="tech-tag">Terraform</span>
+                                <span class="tech-tag">CI/CD</span>
+                                <span class="tech-tag">Prompt Engineering</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>AI-Powered Legal Documentation Assistant</h3>
+                            <p><strong>Context:</strong> The Legal Team maintained detailed documentation in Confluence, but accessing and understanding it quickly was difficult for employees. A more intuitive, conversational way to navigate this information was needed.</p>
+                            <p><strong>Challenge:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Make legal documentation more accessible and actionable in employees' daily workflow.</li>
+                                <li>Ensure all answers are grounded in official Confluence sources.</li>
+                                <li>Integrate the solution seamlessly into Slack, the company's main communication tool.</li>
+                            </ul>
+                            <p><strong>Solution:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Designed and implemented a Slack bot that answers questions about Legal Guides.</li>
+                                <li>Integrated the OpenAI Assistants API to process natural language queries.</li>
+                                <li>Retrieved and parsed Confluence pages using the REST API and BeautifulSoup, transforming them into clean text.</li>
+                                <li>Built and connected an OpenAI vector store to enable semantic search over legal documents.</li>
+                                <li>Linked the assistant with the vector store so that every answer is supported with source citations.</li>
+                                <li>Implemented a citation system that includes clickable links to the original Confluence pages.</li>
+                                <li>Logged all conversations into Google Cloud SQL (PostgreSQL) for traceability and further analysis.</li>
+                                <li>Added robust error handling, retry logic, and detailed logging for production stability.</li>
+                            </ul>
+                            <p><strong>Key Learnings:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                                <li>Gained practical experience integrating LLMs with private enterprise data via OpenAI vector stores.</li>
+                                <li>Learned how to automate ingestion and verification of documents into a semantic search system.</li>
+                                <li>Developed a workflow for automatic source citation to increase trustworthiness of responses.</li>
+                                <li>Strengthened skills in cloud-based SQL persistence and logging of AI interactions.</li>
+                                <li>Experienced building a bot through its entire lifecycle: ingestion → processing → semantic search → user interaction → storage.</li>
+                            </ul>
+                            <div class="project-github">
+                                <a href="https://github.com/alanbustamante733/Slack_Legal_Guides_Assistant" target="_blank" class="github-link">
+                                    <svg class="github-icon" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    View Repository
+                                </a>
+                                <a href="javascript:void(0)" onclick="openImageGallery(['img/lawgical1.png', 'img/lawgical2.png'], 'AI-Powered Legal Documentation Assistant')" class="image-link">
+                                    <svg class="image-icon" viewBox="0 0 24 24">
+                                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                    </svg>
+                                    View Screenshots (2)
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">OpenAI Assistants API</span>
+                                <span class="tech-tag">Vector Store</span>
+                                <span class="tech-tag">Confluence API</span>
+                                <span class="tech-tag">BeautifulSoup</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Google Cloud SQL</span>
+                                <span class="tech-tag">Semantic Search</span>
+                                <span class="tech-tag">RAG</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>AI Bot Hub – Centralized Slack Assistant Platform</h3>
+                            <p><strong>Context:</strong> Different teams (e.g., Legal and AdOps) needed AI-powered Slack bots with very different purposes and logic. Running and maintaining each bot separately created complexity and duplicated effort.</p>
+                            <p><strong>Challenge:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Create a centralized framework to manage multiple AI Slack bots.</li>
+                                <li>Ensure each bot retains its own domain-specific logic and vector stores (e.g., Legal Guides, AdOps workflows).</li>
+                                <li>Provide a way to easily scale by adding new bots in the future without rewriting infrastructure.</li>
+                            </ul>
+                            <p><strong>Solution:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Developed an AI Bot Hub that unifies multiple Slack bots under a single orchestration layer.</li>
+                                <li>Implemented separate modules for each bot:</li>
+                                <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                                    <li><strong>Legal Bot:</strong> Answers legal-related questions using Confluence documentation and vector search.</li>
+                                    <li><strong>AdOps Bot:</strong> Provides operational support and best practices for campaign management.</li>
+                                </ul>
+                                <li>Each bot runs in its own threaded process, ensuring independent operation while sharing a common hub.</li>
+                                <li>Configured bots with their own OpenAI Assistant IDs, vector store IDs, and Confluence pages, managed centrally in one settings.py.</li>
+                                <li>Logging, error handling, and monitoring are centralized, simplifying operations.</li>
+                                <li>Designed the hub to be extensible: new bots with new purposes can be added by registering them in the configuration file.</li>
+                            </ul>
+                            <p><strong>Key Learnings:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                                <li>Learned how to design a modular architecture for AI assistants, balancing independence and centralization.</li>
+                                <li>Practiced multi-threaded orchestration for long-running bots in Slack.</li>
+                                <li>Gained experience in building a scalable AI hub that supports different business units while reducing maintenance overhead.</li>
+                                <li>Strengthened skills in Slack API, OpenAI API, and Confluence integrations, applied across different use cases.</li>
+                            </ul>
+                            <div class="project-github">
+                                <a href="https://github.com/alanbustamante733/AI-bot-hub" target="_blank" class="github-link">
+                                    <svg class="github-icon" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    View Repository
+                                </a>
+                                <a href="javascript:void(0)" onclick="openImageGallery(['img/hub1.png', 'img/hub2.png'], 'AI Bot Hub – Centralized Slack Assistant Platform')" class="image-link">
+                                    <svg class="image-icon" viewBox="0 0 24 24">
+                                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                    </svg>
+                                    View Screenshots (2)
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Multi-threading</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">Modular Architecture</span>
+                                <span class="tech-tag">Slack API</span>
+                                <span class="tech-tag">Confluence API</span>
+                                <span class="tech-tag">Orchestration</span>
+                                <span class="tech-tag">Scalable Design</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>Slack-Integrated Performance Reporting Bot (Dify + BigQuery)</h3>
+                            <p><strong>Context:</strong> Generating performance reports required significant manual effort and time. Teams needed a faster, more intuitive way to access campaign insights directly within their daily workflow.</p>
+                            <p><strong>Challenge:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Automate performance reporting with real-time access to campaign data.</li>
+                                <li>Provide non-technical users with an easy way to query and retrieve insights in Slack.</li>
+                                <li>Integrate BigQuery data into Dify, which required extending its native capabilities.</li>
+                            </ul>
+                            <p><strong>Solution:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                <li>Built a chatbot in Dify integrated with Slack to deliver campaign performance reports on demand.</li>
+                                <li>Developed a custom Dify plugin to securely query BigQuery, enabling the bot to process live data.</li>
+                                <li>Implemented natural language processing so users could request reports without SQL knowledge.</li>
+                                <li>Ensured results were formatted and actionable, delivered directly into Slack conversations.</li>
+                            </ul>
+                            <p><strong>Key Learnings:</strong></p>
+                            <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                                <li>Gained experience extending Dify with custom plugins for enterprise use cases.</li>
+                                <li>Strengthened skills in BigQuery integration, secure API design, and Slack automation.</li>
+                                <li>Learned how to balance usability for non-technical teams with backend complexity.</li>
+                                <li>Delivered a solution that reduced manual reporting time and improved decision-making speed.</li>
+                            </ul>
+                            <div class="project-github">
+                                <a href="https://github.com/alanbustamante733/BigQueryPlug-inJustRead" target="_blank" class="github-link">
+                                    <svg class="github-icon" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Custom Plugin Repository
+                                </a>
+                                <a href="javascript:void(0)" onclick="openImageGallery(['img/performance1.png', 'img/performance2.png', 'img/performance3.png'], 'Slack-Integrated Performance Reporting Bot (Dify + BigQuery)')" class="image-link">
+                                    <svg class="image-icon" viewBox="0 0 24 24">
+                                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                    </svg>
+                                    View Screenshots (3)
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Dify</span>
+                                <span class="tech-tag">Custom Plugin Development</span>
+                                <span class="tech-tag">BigQuery</span>
+                                <span class="tech-tag">Slack Integration</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">API Security</span>
+                                <span class="tech-tag">Real-time Data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Side Projects -->
+                <div class="project-section" style="margin-top: 4rem;">
+                    <h3 class="project-section-title">Side Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card" style="opacity: 0.7;">
+                            <h3>Coming Soon...</h3>
+                            <p>Currently focused on delivering high-impact AI solutions at Remerge GmbH. Side projects in development include code-based animation experiments and multilingual NLP tools.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">In Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="contact.html" class="cta-button">Discuss Your Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <div class="modal-counter" id="modalCounter" style="display: none;"></div>
+        <div class="modal-nav modal-prev" id="modalPrev" onclick="previousImage()" style="display: none;">‹</div>
+        <div class="modal-nav modal-next" id="modalNext" onclick="nextImage()" style="display: none;">›</div>
+        <img class="modal-content" id="modalImage" alt="Project Screenshot">
+        <div class="modal-info">
+            <div id="modalTitle">Project Screenshot</div>
+            <div style="margin-top: 0.5rem; opacity: 0.6;">Press ESC to close • Use ← → arrows to navigate</div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AI Engineer. Crafted with {'<code>'} and artificial intelligence.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Image Modal Variables
+        let currentImages = [];
+        let currentImageIndex = 0;
+        
+        // Single Image Modal Function (for backward compatibility)
+        function openImageModal(imageSrc, projectTitle) {
+            openImageGallery([imageSrc], projectTitle);
+        }
+        
+        // Gallery Modal Function
+        function openImageGallery(images, projectTitle) {
+            currentImages = images;
+            currentImageIndex = 0;
+            
+            const modal = document.getElementById('imageModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalCounter = document.getElementById('modalCounter');
+            const modalPrev = document.getElementById('modalPrev');
+            const modalNext = document.getElementById('modalNext');
+            
+            modalTitle.textContent = projectTitle;
+            
+            // Show/hide navigation controls
+            if (images.length > 1) {
+                modalCounter.style.display = 'block';
+                modalPrev.style.display = 'flex';
+                modalNext.style.display = 'flex';
+            } else {
+                modalCounter.style.display = 'none';
+                modalPrev.style.display = 'none';
+                modalNext.style.display = 'none';
+            }
+            
+            updateModalImage();
+            modal.classList.add('active');
+            
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function updateModalImage() {
+            const modalImage = document.getElementById('modalImage');
+            const modalCounter = document.getElementById('modalCounter');
+            
+            modalImage.src = currentImages[currentImageIndex];
+            
+            if (currentImages.length > 1) {
+                modalCounter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+            }
+        }
+        
+        function previousImage() {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+            } else {
+                currentImageIndex = currentImages.length - 1;
+            }
+            updateModalImage();
+        }
+        
+        function nextImage() {
+            if (currentImageIndex < currentImages.length - 1) {
+                currentImageIndex++;
+            } else {
+                currentImageIndex = 0;
+            }
+            updateModalImage();
+        }
+        
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+            
+            // Restore body scrolling
+            document.body.style.overflow = 'auto';
+            
+            // Reset variables
+            currentImages = [];
+            currentImageIndex = 0;
+        }
+        
+        // Close modal with ESC key and navigate with arrow keys
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('imageModal');
+            if (modal.classList.contains('active')) {
+                if (event.key === 'Escape') {
+                    closeImageModal();
+                } else if (event.key === 'ArrowLeft') {
+                    previousImage();
+                } else if (event.key === 'ArrowRight') {
+                    nextImage();
+                }
+            }
+        });
+        
+        // Close modal when clicking outside the image
+        document.getElementById('imageModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeImageModal();
+            }
+        });
+    </script>
+</body>
+</html>

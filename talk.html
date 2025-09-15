@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineer - Talks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix background -->
+    <div class="matrix-bg" id="matrix-bg"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">{'< AI_Engineer />'}</div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="talk.html">Talks</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="fun.html">Fun</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Talk Content -->
+    <div class="page-content">
+        <section id="talks" class="talk">
+            <div class="container">
+                <h2 class="section-title">{'< Talks />'}</h2>
+                <div class="talk-content">
+                    <div class="talk-intro">
+                        <p>Knowledge sharing and empowering colleagues through practical presentations. These sessions were delivered at <strong>Remerge GmbH</strong> to help teams understand and leverage automation and AI technologies.</p>
+                    </div>
+                    
+                    <div class="past-talks" style="margin: 3rem 0;">
+                        <h3>Internal Presentations at Remerge GmbH</h3>
+                        <div class="projects-grid" style="margin-top: 2rem;">
+                            <div class="project-card">
+                                <h3>Workflow Automation with Zapier</h3>
+                                <p><strong>Context:</strong></p>
+                                <p>Many colleagues outside of engineering were not familiar with automation tools, even though their daily work involved repetitive, manual processes. To empower them, I organized a knowledge-sharing session focused on practical automation.</p>
+                                
+                                <p><strong>Audience:</strong></p>
+                                <p>Non-developers from different teams looking to simplify tasks and optimize results.</p>
+                                
+                                <p><strong>Content:</strong></p>
+                                <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li>Gave a conference-style presentation introducing Zapier as a no-code automation platform.</li>
+                                    <li>Showed real-world integration examples, such as connecting productivity tools, notifications, and reporting workflows.</li>
+                                    <li>Demonstrated how automation can reduce manual effort, save time, and improve accuracy in daily tasks.</li>
+                                </ul>
+                                
+                                <p><strong>Impact:</strong></p>
+                                <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                                    <li>Helped non-technical colleagues understand the potential of automation.</li>
+                                    <li>Enabled them to build simple workflows on their own, reducing dependency on developers.</li>
+                                    <li>Improved team efficiency and inspired the adoption of no-code tools across the company.</li>
+                                </ul>
+                                
+                                <div class="project-github">
+                                    <a href="javascript:void(0)" onclick="openPdfModal('pdfs/zapier.pdf', 'Workflow Automation with Zapier - Presentation')" class="github-link">
+                                        <svg class="github-icon" viewBox="0 0 24 24">
+                                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                        </svg>
+                                        Presentation Materials
+                                    </a>
+                                    <a href="javascript:void(0)" onclick="openImageGallery(['img/zapier1.png', 'img/zapier2.png'], 'Workflow Automation with Zapier')" class="image-link">
+                                        <svg class="image-icon" viewBox="0 0 24 24">
+                                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                        </svg>
+                                        View Screenshots (2)
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Zapier</span>
+                                    <span class="tech-tag">No-Code Automation</span>
+                                    <span class="tech-tag">Knowledge Sharing</span>
+                                    <span class="tech-tag">Team Empowerment</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <h3>Vector Stores in Practice – From Self-Hosted Models to Frontier Models</h3>
+                                <p><strong>Context:</strong></p>
+                                <p>With the growing adoption of Large Language Models (LLMs), the challenge of managing private knowledge and grounding responses became central. Many teams were curious about how vector databases work in practice and how they can support AI solutions.</p>
+                                
+                                <p><strong>Audience:</strong></p>
+                                <p>Mixed group of technical and non-technical colleagues interested in understanding how AI can securely use enterprise knowledge.</p>
+                                
+                                <p><strong>Content:</strong></p>
+                                <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li>Delivered a session on vector stores and their role in enhancing LLMs with retrieval-augmented generation (RAG).</li>
+                                    <li>Presented examples using both self-hosted models (Hugging Face embeddings + local vector DBs via Ollama interface) and frontier models (OpenAI with managed vector stores).</li>
+                                    <li>Showed practical demos of querying enterprise data with semantic search and grounding AI responses in internal knowledge.</li>
+                                    <li>Compared trade-offs: scalability, cost, security, and ease of integration between self-hosted and frontier setups.</li>
+                                </ul>
+                                
+                                <p><strong>Impact:</strong></p>
+                                <ul style="color: #ccc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                                    <li>Increased awareness among colleagues of how vector stores enable private, trustworthy AI assistants.</li>
+                                    <li>Provided decision-making guidance on when to choose self-hosted vs. managed solutions.</li>
+                                    <li>Strengthened the team's ability to leverage AI for knowledge retrieval and productivity optimization.</li>
+                                </ul>
+                                
+                                <div class="project-github">
+                                    <a href="https://github.com/alanbustamante733/HackathonDevs" target="_blank" class="github-link">
+                                        <svg class="github-icon" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        Hackathon Examples
+                                    </a>
+                                    <a href="javascript:void(0)" onclick="openPdfModal('pdfs/vectorestore.pdf', 'Vector Stores in Practice - Presentation')" class="github-link">
+                                        <svg class="github-icon" viewBox="0 0 24 24">
+                                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                        </svg>
+                                        Presentation Materials
+                                    </a>
+                                    <a href="javascript:void(0)" onclick="openImageModal('img/ollama.png', 'Vector Stores in Practice – From Self-Hosted Models to Frontier Models')" class="image-link">
+                                        <svg class="image-icon" viewBox="0 0 24 24">
+                                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                        </svg>
+                                        View Screenshot
+                                    </a>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Vector Stores</span>
+                                    <span class="tech-tag">RAG</span>
+                                    <span class="tech-tag">LLMs</span>
+                                    <span class="tech-tag">OpenAI</span>
+                                    <span class="tech-tag">Ollama</span>
+                                    <span class="tech-tag">Hugging Face</span>
+                                    <span class="tech-tag">Self-Hosted Models</span>
+                                    <span class="tech-tag">Semantic Search</span>
+                                    <span class="tech-tag">Enterprise AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="talk-cta">
+                        <a href="contact.html" class="cta-button">Discuss Knowledge Sharing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AI Engineer. Crafted with {'<code>'} and artificial intelligence.</p>
+        </div>
+    </footer>
+    
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <div class="modal-counter" id="modalCounter" style="display: none;"></div>
+        <div class="modal-nav modal-prev" id="modalPrev" onclick="previousImage()" style="display: none;">‹</div>
+        <div class="modal-nav modal-next" id="modalNext" onclick="nextImage()" style="display: none;">›</div>
+        <img class="modal-content" id="modalImage" alt="Talk Screenshot">
+        <div class="modal-info">
+            <div id="modalTitle">Talk Screenshot</div>
+            <div style="margin-top: 0.5rem; opacity: 0.6;">Press ESC to close • Use ← → arrows to navigate</div>
+        </div>
+    </div>
+    
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <span class="pdf-modal-close" onclick="closePdfModal(event)">&times;</span>
+            <div class="pdf-modal-info" id="pdfModalTitle">Presentation Materials</div>
+            <iframe id="pdfFrame" src="" title="PDF Viewer"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Image Modal Variables
+        let currentImages = [];
+        let currentImageIndex = 0;
+        
+        // Single Image Modal Function (for backward compatibility)
+        function openImageModal(imageSrc, talkTitle) {
+            openImageGallery([imageSrc], talkTitle);
+        }
+        
+        // Gallery Modal Function
+        function openImageGallery(images, talkTitle) {
+            currentImages = images;
+            currentImageIndex = 0;
+            
+            const modal = document.getElementById('imageModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalCounter = document.getElementById('modalCounter');
+            const modalPrev = document.getElementById('modalPrev');
+            const modalNext = document.getElementById('modalNext');
+            
+            modalTitle.textContent = talkTitle;
+            
+            // Show/hide navigation controls
+            if (images.length > 1) {
+                modalCounter.style.display = 'block';
+                modalPrev.style.display = 'flex';
+                modalNext.style.display = 'flex';
+            } else {
+                modalCounter.style.display = 'none';
+                modalPrev.style.display = 'none';
+                modalNext.style.display = 'none';
+            }
+            
+            updateModalImage();
+            modal.classList.add('active');
+            
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function updateModalImage() {
+            const modalImage = document.getElementById('modalImage');
+            const modalCounter = document.getElementById('modalCounter');
+            
+            modalImage.src = currentImages[currentImageIndex];
+            
+            if (currentImages.length > 1) {
+                modalCounter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+            }
+        }
+        
+        function previousImage() {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+            } else {
+                currentImageIndex = currentImages.length - 1;
+            }
+            updateModalImage();
+        }
+        
+        function nextImage() {
+            if (currentImageIndex < currentImages.length - 1) {
+                currentImageIndex++;
+            } else {
+                currentImageIndex = 0;
+            }
+            updateModalImage();
+        }
+        
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+            
+            // Restore body scrolling
+            document.body.style.overflow = 'auto';
+            
+            // Reset variables
+            currentImages = [];
+            currentImageIndex = 0;
+        }
+        
+        // Close modal with ESC key and navigate with arrow keys
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('imageModal');
+            if (modal.classList.contains('active')) {
+                if (event.key === 'Escape') {
+                    closeImageModal();
+                } else if (event.key === 'ArrowLeft') {
+                    previousImage();
+                } else if (event.key === 'ArrowRight') {
+                    nextImage();
+                }
+            }
+        });
+        
+        // Close modal when clicking outside the image
+        document.getElementById('imageModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeImageModal();
+            }
+        });
+        
+        // PDF Modal Functions
+        function openPdfModal(pdfSrc, title) {
+            const modal = document.getElementById('pdfModal');
+            const pdfFrame = document.getElementById('pdfFrame');
+            const pdfTitle = document.getElementById('pdfModalTitle');
+            
+            pdfFrame.src = pdfSrc;
+            pdfTitle.textContent = title;
+            modal.classList.add('active');
+            
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePdfModal(event) {
+            const modal = document.getElementById('pdfModal');
+            const pdfFrame = document.getElementById('pdfFrame');
+            
+            modal.classList.remove('active');
+            pdfFrame.src = ''; // Clear the PDF to stop loading
+            
+            // Restore body scrolling
+            document.body.style.overflow = 'auto';
+            
+            // Prevent any scroll jump
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            return false;
+        }
+        
+        // Close PDF modal with ESC key
+        document.addEventListener('keydown', function(event) {
+            const pdfModal = document.getElementById('pdfModal');
+            if (pdfModal.classList.contains('active') && event.key === 'Escape') {
+                closePdfModal();
+            }
+        });
+        
+        // Close PDF modal when clicking outside the content
+        document.getElementById('pdfModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closePdfModal(event);
+            }
+        });
+    </script>
+</body>
+</html>
