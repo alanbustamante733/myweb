@@ -279,6 +279,16 @@
         
         // PDF Modal Functions
         function openPdfModal(pdfSrc, title) {
+            // Detect mobile devices
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // On mobile: Open PDF in new tab for full functionality
+                window.open(pdfSrc, '_blank');
+                return;
+            }
+            
+            // Desktop: Use modal as before (unchanged)
             const modal = document.getElementById('pdfModal');
             const pdfFrame = document.getElementById('pdfFrame');
             const pdfTitle = document.getElementById('pdfModalTitle');
@@ -297,7 +307,7 @@
             
             modal.classList.remove('active');
             pdfFrame.src = ''; // Clear the PDF to stop loading
-            
+           
             // Restore body scrolling
             document.body.style.overflow = 'auto';
             
